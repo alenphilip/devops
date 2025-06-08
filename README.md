@@ -1,5 +1,4 @@
-# devops
-program 2
+# program 2
 mkdir program2
 cd program2
 
@@ -43,3 +42,5 @@ java -cp target\myapp-1.0-SNAPSHOT.jar com.example.App
 
 # test
 mvn test
+
+# program 3
