@@ -16,7 +16,7 @@ cd program2
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>3.8.1</version>
+      <version>3.8.1</version>"use 4.13.2 if test doesnt work"
       <scope>test</scope>
     </dependency>
   </dependencies>
