@@ -1,0 +1,35 @@
+Step 1 : On your VM Machine , in Ubuntu ( or any Linux VM ) open the terminal 
+ sudo apt install ansible -y
+
+Step 2: Verify Ansible Installation
+ ansible --version
+
+Step 3: Create Hosts Inventory File
+ Create the directory and open the hosts file:
+ sudo mkdir -p /etc/ansible
+ sudo nano /etc/ansible/hosts
+ Add the following content:
+ [local]
+ localhost ansible_connection=local
+
+After typing these info Click  Ctrl + Q --------> Enter ---------> Ctrl + O
+
+
+Step 4: Test Connection Using Ping Module
+ ansible all -m ping
+
+
+Create a file named playbook.yml using:
+ nano playbook.yml
+
+Add the following content:
+- name: Basic Hello World Playbook
+  hosts: all
+  tasks:
+    - name: Print Hello World
+      debug:
+        msg: "Hello, world!"
+
+ Step 6: Run the Playbook
+ Execute the playbook using:
+ ansible-playbook playbook.yml
