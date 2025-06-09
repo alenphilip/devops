@@ -3,6 +3,13 @@ Step 1 : On your VM Machine , in Ubuntu ( or any Linux VM ) open the terminal
 
 Step 2: Verify Ansible Installation
  ansible --version
+(ERRor: 
+sudo locale-gen en_IN.UTF-8
+sudo update-locale LANG=en_IN.UTF-8
+export LANG=en_IN.UTF-8
+export LC_ALL=en_IN.UTF-8
+)
+
 
 Step 3: Create Hosts Inventory File
  Create the directory and open the hosts file:
@@ -12,7 +19,7 @@ Step 3: Create Hosts Inventory File
  [local]
  localhost ansible_connection=local
 
-After typing these info Click  Ctrl + Q --------> Enter ---------> Ctrl + O
+After typing these info Click  Ctrl + O --------> Enter ---------> Ctrl + X
 
 
 Step 4: Test Connection Using Ping Module
